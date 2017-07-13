@@ -1,0 +1,27 @@
+<html>
+<title>💛❤️💚</title>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/index.css">
+  <script src="src/js/index.js"></script>
+</head>
+<body>
+
+<div id="builds">
+  <div class="build-template">
+    <div class="build__name"></div>
+    <div class="build__message"></div>
+  </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  var io = io.connect('http://localhost:4000');
+
+  io.on('buildEvent', function (data) {
+    console.log(data);
+    renderBuilds(data);
+  });
+</script>
+</body>
+</html>

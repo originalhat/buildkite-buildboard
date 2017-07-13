@@ -1,0 +1,40 @@
+
+.builds {
+  display: flex;
+}
+
+.build-template {
+  display: none;
+}
+
+.build {
+  background-color: #eee;
+  padding: 32px;
+  margin: 8px 0;
+}
+
+.build--scheduled {
+  background-color: #f2e187;
+}
+
+.build--running {
+  background-color: #f2e187;
+}
+
+.build--failed {
+  background-color: #f83f23;
+}
+
+.build--passed {
+  background-color: #b0df21;
+}
+
+.build__name {
+  font-family: 'Lobster', cursive;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.build__message {
+  font-size: 16px;
+}
