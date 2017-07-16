@@ -1,6 +1,6 @@
 # Buildkite Buildboard
 
-Simple realtime Buildkite build status build visualization.
+Webhook based build visualization for **[Buildkite](http://buildkite.com/)**.
 
 ## Usage
 
