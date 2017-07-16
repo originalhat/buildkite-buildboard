@@ -1,6 +1,10 @@
 
-.builds {
-  display: flex;
+#builds {
+  display: grid;
+  grid-template-columns: 49% auto;
+  grid-gap: 8px;
+  grid-template-rows: 49% auto;
+  height: 100%;
 }
 
 .build-template {
@@ -9,32 +13,42 @@
 
 .build {
   background-color: #eee;
-  padding: 32px;
-  margin: 8px 0;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 3px;
 }
 
 .build--scheduled {
   background-color: #f2e187;
+  border: 1px solid #c1b46c;
 }
 
 .build--running {
   background-color: #f2e187;
+  border: 1px solid #c1b46c;
 }
 
 .build--failed {
   background-color: #f83f23;
+  border: 1px solid #c6321c;
 }
 
 .build--passed {
   background-color: #b0df21;
+  border: 1px solid #8cb21a;
 }
 
 .build__name {
-  font-family: 'Lobster', cursive;
+  font-family: Lobster, cursive;
   font-size: 24px;
   margin-bottom: 8px;
 }
 
 .build__message {
+  font-family: Helvetica;
   font-size: 16px;
 }
