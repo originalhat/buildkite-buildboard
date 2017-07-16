@@ -16,7 +16,7 @@
 
 <script src="/socket.io/socket.io.js"></script>
 <script>
-  var io = io.connect('http://buildkite.cfapps.io');
+  var io = io.connect('https://buildkite.cfapps.io');
 
   io.on('buildEvent', function (data) {
     console.log(data);
